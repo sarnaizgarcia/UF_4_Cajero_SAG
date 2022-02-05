@@ -9,18 +9,10 @@
 <body>
 	<h1>Cajero</h1>
 	
-	<form action="/transferencias" method="post">
-		<p>
-			Introduce cantidad:
-			<input type="number" step="0.01" name="cantidad">
-		</p>
-		<p>
-			Introduce cuenta de destino:
-			<input type="number" name="cuenta">
-		</p>
-		<input type="submit" value="Entrar">
-	</form>
+	<h3>Cuenta ${cuentaOrigen.getIdCuenta() }</h3>
 	
+	<h2>La cuenta de destino no existe</h2>	
+
 	<p><a href="/menu">Volver</a></p>
 	
 </body>

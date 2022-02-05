@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.ejercicio.uf4.modelo.beans.Cuenta;
 import com.ejercicio.uf4.modelo.beans.Movimiento;
 import com.ejercicio.uf4.modelo.repository.IntMovimientoRepository;
 
@@ -23,5 +24,5 @@ public class MovimientoDaoImplMy8SBJpa implements IntMovimientoDao {
 	public Movimiento crearMovimiento(Movimiento movimiento) {
 		return movimientoRepo.save(movimiento);
 	}
-	
+
 }
