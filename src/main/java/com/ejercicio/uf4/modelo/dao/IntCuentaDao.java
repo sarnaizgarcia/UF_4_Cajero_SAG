@@ -8,6 +8,6 @@ public interface IntCuentaDao {
 	
 	List<Cuenta> buscarTodos();
 	Cuenta buscarPorId(int idCuenta);
-//	Cuenta actualizarSaldo(int idCuenta, double incremento);
+	Cuenta actualizarCuenta(Cuenta cuenta);
 	
 }

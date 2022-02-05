@@ -9,15 +9,11 @@
 <body>
 	<h1>Cajero</h1>
 	
-	<form action="/" method="post">
-		Introduce cuenta:
-		<input type="text" name="idCuenta">
-		<input type="submit" value="Entrar">
-	</form>
+	<h3>Cuenta ${cuenta.getIdCuenta() }</h3>
 	
-	<c:if test="${cuentaValida == null }">
-		<p>${mensaje }</p>
-	</c:if>
+	<h2>Saldo insuficiente</h2>	
+
+	<p><a href="/menu">Volver</a></p>
 	
 </body>
 </html>

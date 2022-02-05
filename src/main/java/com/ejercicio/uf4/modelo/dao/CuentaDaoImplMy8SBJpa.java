@@ -16,12 +16,17 @@ public class CuentaDaoImplMy8SBJpa implements IntCuentaDao {
 
 	@Override
 	public Cuenta buscarPorId(int idCuenta) {
-		return cuentaRepo.getById(idCuenta);
+		return cuentaRepo.findById(idCuenta).orElse(null);
 	}
 
 	@Override
 	public List<Cuenta> buscarTodos() {
 		return cuentaRepo.findAll();
+	}
+
+	@Override
+	public Cuenta actualizarCuenta(Cuenta cuenta) {
+		return cuentaRepo.save(cuenta);
 	}
 
 }
